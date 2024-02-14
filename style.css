@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    width: 100%;
+    height: 770px;
+    background:rgba(0, 0, 0, 0.4) url(img/hero.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+#main .nav .logo h1{
+    font-size: 25px;
+    color: white;
+    padding-top: 40px;
+    font-family: 'Playfair Display', serif;
+}
+#main .nav .navbar ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 50px;
+    gap: 30px;
+}
+#main .nav .navbar ul li{
+    list-style: none;
+}
+#main .nav .navbar ul li a{
+    text-decoration: none;
+    color: rgb(202, 202, 202);
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+#main .nav .navbar ul li a:hover{
+    color: white;
+}
+#main .nav .icon .fa-solid {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(158, 158, 158);
+    margin-top: 40px;
+    padding-top: 13px;
+    color: white;
+    text-align: center;
+    font-size: 13px;
+}
+#main .nav .icon .fa-solid:hover{
+    border: 2px solid white;
+}
+#main .nav .icon span{
+    padding-left: 20px;
+    color: white;
+} 
+#main #rightside{
+    margin-top: 9%;
+    margin-left: 57.5%;
+}
+#main #rightside h1{
+    width: 500px;
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    animation: slidebottom 1s ease forwards;
+    animation-delay: 2s;
+}
+#main #rightside p{
+    width: 580px;
+    color: rgb(189, 189, 189);
+    margin-top: 50px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    animation: slidebottom 2s ease forwards;
+    animation-delay: .7s;
+}
+#main #rightside .btn1{
+    width: 160px;
+    height: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 114, 221);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    opacity: 0;
+    animation: slidebottom 3s ease forwards;
+    animation-delay: .7s;
+}
+#main #rightside .btn1 span{
+    padding-left: 10px;
+}
+#main #rightside .btn2{
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-top: -60px;
+    margin-left: 24%;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    animation: slidebottom 3s ease forwards;
+    animation-delay: .7s;
+    transition: all 1s ease-in-out;
+}
+#main #rightside .btn2 span{
+    padding-left: 10px;
+}
+#main #rightside .btn2:hover{
+    background-color: white;
+    color: black;
+}
+
+@keyframes slidebottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#main1{
+    width: 100%;
+    height: 770px;
+    background-color: rgb(32, 32, 32);
+}
+#main1 .leftside{
+    padding-top: 8%;
+    padding-left: 10%;
+    opacity: 0;
+    animation: slidebottom 3s ease forwards;
+    animation-delay: .7s;
+}
+#main1 .leftside h1{
+    width: 500px;
+    font-size: 50px;
+    color: white;
+}
+#main1 .leftside p{
+    width: 450px;
+    color: rgb(150, 150, 150);
+    margin-top: 50px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+#main1 .leftside .btn3{
+    width: 180px;
+    height: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 114, 221);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+}
+#main1 .leftside .btn3 span{
+    padding-left: 10px;
+}
+#main1 .rightside{
+    width: 53%;
+    height: 280px;
+    background-color: rgb(24, 20, 20);
+    margin-top: -60px;
+    margin-left: 47%;
+}
+#main1 .img{
+    width: 580px;
+    height: 600px;
+    background-image: url(img/about-img.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -40%;
+    margin-left: 53%;
+    opacity: 0;
+    animation: slidebottom 3s ease forwards;
+    animation-delay: .7s;
+}
+
+#main2{
+    width: 100%;
+    height: 770px;
+    background-color: rgb(44, 44, 44);
+    font-family: 'Roboto', sans-serif;
+}
+#main2 h1{
+    font-size: 50px;
+    padding-top: 5%;
+    padding-left: 6%;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+#main2 .box{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#main2 .box .box1{
+    width: 400px;
+    height: 200px;
+}
+#main2 .box .box1 h3{
+    padding-top: 30px;
+    color: white;
+    padding-left: 20px;
+    font-family: 'Playfair Display', serif;
+}
+#main2 .box .box1 p{
+    padding-top: 20px;
+    color: rgb(189, 189, 189);
+    padding-left: 20px;
+    font-size: 13px;
+}
+#main2 .box .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(0, 114, 221);
+}
+#main2 .box .icon .fa-solid{
+    padding-left: 20px;
+    font-size: 30px;
+    padding-top: 8px;
+    color: white;
+}
+#main2 .box2{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#main2 .box2 .box1{
+    width: 400px;
+    height: 200px;
+}
+#main2 .box2 .box1 h3{
+    padding-top: 30px;
+    color: white;
+    padding-left: 20px;
+    font-family: 'Playfair Display', serif;
+}
+#main2 .box2 .box1 p{
+    width: 400px;
+    padding-top: 20px;
+    color: rgb(189, 189, 189);
+    padding-left: 20px;
+    font-size: 13px;
+}
+#main2 .box2 .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(0, 114, 221);
+}
+#main2 .box2 .icon .fa-solid{
+    padding-left: 20px;
+    font-size: 30px;
+    padding-top: 8px;
+    color: white;
+}
+
+
+#main3{
+    width: 100%;
+    height: 770px;
+    background-color: rgb(32, 32, 32);
+}
+#main3 h1{
+    font-size: 50px;
+    padding-top: 5%;
+    padding-left: 9%;
+    font-family: 'Playfair Display', serif;
+    color: white;
+    opacity: 0;
+    animation: slidebottom 3s ease forwards;
+    animation-delay: .7s;
+}
+#main3 .img1 img{
+    width: 700px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 5%;
+    margin-left: 9%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
+}
+#main3 .rightside{
+    margin-left: 63%;
+    margin-top: -23%;
+}
+#main3 .rightside h2{
+    width: 500px;
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+}
+#main3 .rightside p{
+    width: 450px;
+    margin-top: 20px;
+    color: rgb(189, 189, 189);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    animation-delay: .7s;
+}
+#main3 .rightside .btn4{
+    width: 180px;
+    height: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 114, 221);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    animation-delay: .7s;
+}
+#main3 .rightside .btn4 span{
+    padding-left: 10px;
+}
+
+
+
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+#main4{
+    width: 100%;
+    height: 770px;
+    background-color: rgb(37, 37, 37);
+    position: relative;
+}
+#main4 #nav-3{
+    width: 80%;
+    height: 80px;
+    border-bottom: 1px solid gray;
+    position: absolute;
+    top: 50px;
+    margin-left: 10%;
+}
+#main4 #nav-3 ul{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+}
+#main4 #nav-3 ul li{
+    list-style: none;
+}
+#main4 #nav-3 ul li a{
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+}
+#main4 .img1 img{
+    width: 700px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40%;
+    margin-top: -19%;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: .7s;
+}
+#main4 .leftside{
+    padding-top: 12%;
+    padding-left: 10%;
+}
+#main4 .leftside h2{
+    width: 500px;
+    font-size: 50px;
+    color: white;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: .7s;
+}
+#main4 .leftside p{
+    width: 450px;
+    margin-top: 20px;
+    color: rgb(189, 189, 189);
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    animation-delay: .7s;
+}
+#main4 .leftside .btn5{
+    width: 180px;
+    height: 60px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgb(0, 114, 221);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-left: 30px;
+    color: white;
+    opacity: 0;
+    animation: slideRight 2s ease forwards;
+    animation-delay: .7s;
+}
+#main4 .leftside .btn5 span{
+    padding-left: 10px;
+}
+
+#main5{
+    width: 100%;
+    height: 800px;
+    background-color: rgb(54, 54, 54);
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+#main5 h1{
+    font-size: 50px;
+    padding-top: 3%;
+    padding-left: 9%;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+#main5 .main-box{
+    width: 1300px;
+    margin-top: 30px;
+    margin-left: 9%;
+    display: flex;
+    justify-content: space-between;
+}
+#main5 .main-b{
+    width: 425px;
+    height: 150px;
+    background-color: #0F0F11;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: white;
+}
+#main5 .main-b:hover{
+    background-color: #037EF3;
+}
+#main5 .main-b h4{
+    font-weight: 300px;
+    color: white;
+    margin-top: -20px;
+    padding-left: 30px;
+}
+#main5 .main-box1{
+    width: 1300px;
+    margin-left: 9%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#main5 .main-box2{
+    width: 1300px;
+    margin-left: 9%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#main5 .main-box3{
+    width: 1300px;
+    margin-left: 9%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+
+#main6{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(46, 46, 46);
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+#main6 h1{
+    font-size: 50px;
+    padding-top: 3%;
+    padding-left: 9%;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+#main6 .leftside1{
+    width: 500px;
+    height: 400px;
+    margin-top: 3%;
+    margin-left: 9%;
+    float: left;
+}
+#main6 .leftside1 .content{
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+    padding-top: 1.5%;
+    padding-left: 2%;
+    color: #037EF3;
+}
+#main6 .leftside1 .content .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(img/angla.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main6 .leftside1 .c1 .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(img/josh.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main6 .leftside1 .c2 .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(img/asas.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main6 .leftside1 .content:hover{
+    width: 500px;
+    height: 70px;
+    background-color: #037EF3;
+    border-radius: 10px;
+    padding-top: 1.5%;
+    padding-left: 2%;
+    color: white;
+}
+#main6 .leftside1 .content h4{
+    margin-top: -40px;
+    padding-left: 13%;
+}
+#main6 .leftside1 .content h5{
+    margin-top: 5px;
+    padding-left: 13%;
+    color: gray;
+}
+#main6 .rightside1{
+    width: 700px;
+    height: 400px;
+    margin-top: 3%;
+    margin-left: 4%;
+    float: left;
+}
+#main6 .rightside1 p{
+    font-size: 30px;
+    color: white;
+    line-height: 45px;
+}
+#main6 .rightside1 h4{
+    margin-top: 25px;
+    color: white;
+}
+#main6 .rightside1 h4 span{
+    line-height: 40px;
+    color: gray; 
+}
